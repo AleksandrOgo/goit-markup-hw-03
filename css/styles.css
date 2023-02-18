@@ -10,40 +10,48 @@
     --font-size-16: 16px;
     --font-size-18: 18px;
 }
-.container {
-        width: 1158px;
-        padding: 0px 15px;
-        border-bottom: 1px solid var(--color-white-dark);
-        margin: 0 auto;
-        display: flex;
-    }
-    .header {
-    padding: 24px 0px;
-    }
-    .header-container {
-    display: flex;
-    align-items: center;
-    width: 1158px;
-    border-bottom: 1px solid var(--color-white-dark);
-    margin: 0 auto;
-
-    }
+h1,h2,h3,p,ul {
+    margin: 0;
+    padding: 0;
+}
 body {
 font-family: 'Roboto', sans-serif;
 font-size: var(--font-size-16);
 line-height: 1.5;
 color: var(--color-gray-light);
 }
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 1158px;
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 24px 0px;
+}
+
+.header-container {
+    display: flex;
+}
+
+.header-menu {
+    display: flex;
+    flex-grow: 1;
+    gap: 40px;
+}
 .logo {
 font-family: 'Raleway', sans-serif;
 font-weight: 800;
 font-size: var(--font-size-18);
 line-height: 1.33;
-letter-spacing: 3%;
+letter-spacing: 0.03em;
 color: var(--color-blue);
 text-transform: uppercase;
 text-decoration: none;
-padding: 24px 1240px 24px 156px;
 }
 .logo:focus {
 color: var(--color-blue);
@@ -67,25 +75,31 @@ text-decoration: none;
 color: var(--color-blue);
 }
 .link-nav {
-font-family: 'Roboto', sans-serif;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
 text-decoration: none;
 color: var(--color-dark);
+padding: 24px 0px;
+display: block;
 }
 .link-nav:focus {
 color: var(--color-blue);
 }
 .link-nav:hover {
 color: var(--color-blue-light)
-
+}
+.link-address {
+font-weight: 400;
+color: var(--color-gray);
+padding: 24px 0px;
 }
 .navigation {
 font-size: var(--font-size-16);
 line-height: 1.5;
 color: var(--color-dark);
 display: flex;
+align-items: center;
 }
 .list-navigation {
 display: flex;
@@ -97,6 +111,9 @@ color: var(--color-gray);
 text-decoration: none;
 font-style: normal;
 text-align: left;
+}
+.contacts-list {
+display: flex;
 }
 .hero {
 background-color: var(--color-dark);
