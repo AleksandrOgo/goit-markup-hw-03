@@ -181,6 +181,7 @@ line-height: 1.2;
 color: var(--color-dark);
 letter-spacing: 0.02em;
 gap: 24px;
+text-align: center;
 }
 .section-text {
 font-size: var(--font-size-16);
@@ -188,6 +189,7 @@ line-height: 1.5;
 color: var(--color-dark);
 letter-spacing: 0.02em;
 padding-top: 8px;
+text-align: center;
 }
 .section-title {
 font-weight: 700;
@@ -196,8 +198,16 @@ line-height: 1.2;
 color: var(--color-dark);
 text-align: center;
 align-items: center;
-padding-top: 120px;
-margin: 112px;
+margin-bottom: 72px;
+}
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    color: var(--color-dark);
+    text-align: center;
+    align-items: center;
+    margin-bottom: 72px;
 }
 .services {
 display: flex;
@@ -208,8 +218,8 @@ gap: 24px;
 .team {
 display: flex;
 align-items: center;
-padding-bottom: 120px;
 gap: 24px;
+background: var(--color-white);
 }
 .footer {
 background-color: var(--color-dark);
@@ -231,6 +241,7 @@ font-size: var(--font-size-16);
 line-height: 1.5;
 color: var(--color-white-dark);
 margin-top: 16px;
+width: 264px;
 }
 .portfolio-navi {
 display: flex;
@@ -267,5 +278,27 @@ gap: 24px;
     text-align: left;
 }
 .card-bottom {
-padding-bottom: 32px;
+padding: 32px 0;
+}
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+.card-color {
+background: var(--color-white)
+}
+img {
+    display: block;
+}
+.our-team {
+background: var(--color-light);
+padding: 120px 0;
 }
