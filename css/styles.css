@@ -32,6 +32,7 @@ ul {
 
 .header {
     padding: 24px 0px;
+    box-sizing: border-box;
 }
 
 .header-container {
@@ -103,9 +104,10 @@ gap: 40px;
 }
 .list-about {
 display: flex;
-align-items: center;
 text-align: left;
 gap: 24px;
+flex-basis: calc((100%-(3*24px))/4);
+
 }
 .address {
 font-size: var(--font-size-16);
@@ -159,26 +161,25 @@ font-weight: 700;
 font-size: 56px;
 line-height: 1.07;
 color: var(--color-white);
+width: 496px;
+height: 120px;
+margin: 0 auto 48px auto;
 }
 .section-one {
 display: flex;
-align-items: center;
 padding-top: 120px;
 padding-bottom: 120px;
-padding-left: 156px;
-padding-right: 156px;
 }
 .section-two {
 display: flex;
 align-items: center;
+padding-bottom: 120px;
 }
 .section-name {
 font-size: 20px;
 line-height: 1.2;
 color: var(--color-dark);
 letter-spacing: 0.02em;
-align-items: center;
-text-align: center;
 gap: 24px;
 }
 .section-text {
@@ -186,8 +187,7 @@ font-size: var(--font-size-16);
 line-height: 1.5;
 color: var(--color-dark);
 letter-spacing: 0.02em;
-align-items: center;
-text-align: center;
+padding-top: 8px;
 }
 .section-title {
 font-weight: 700;
@@ -196,15 +196,13 @@ line-height: 1.2;
 color: var(--color-dark);
 text-align: center;
 align-items: center;
-padding-bottom: 112px;
+padding-top: 120px;
+margin: 112px;
 }
 .services {
 display: flex;
 align-items: center;
-padding-left: 156px;
-padding-right: 156px;
-padding-top: 72px;
-padding-bottom: 120px;
+margin: 72px;
 gap: 24px;
 }
 .team {
@@ -232,10 +230,7 @@ font-weight: 400;
 font-size: var(--font-size-16);
 line-height: 1.5;
 color: var(--color-white-dark);
-padding-top: 16px;
-padding-bottom: 120px;
-padding-right: 756px;
-align-items: left;
+margin-top: 16px;
 }
 .portfolio-navi {
 display: flex;
@@ -270,4 +265,7 @@ gap: 24px;
     color: var(--color-dark);
     letter-spacing: 0.02em;
     text-align: left;
+}
+.card-bottom {
+padding-bottom: 32px;
 }
