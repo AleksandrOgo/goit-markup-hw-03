@@ -314,6 +314,7 @@ padding-bottom: 120px;
 column-gap: 24px;
 row-gap: 48px;
 margin: 32px 0px;
+flex-basis: calc((100%-24px)/3);
 }
 .portfolio-works {
 background: var(--color-gray-light)
