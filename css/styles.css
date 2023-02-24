@@ -39,7 +39,6 @@ ul {
     display: flex;
     align-items: center;
     border-bottom: 1px solid #E7E9FC;
-    width: 100%;
 }
 
 .header-menu {
@@ -135,7 +134,10 @@ font-size: var(--font-size-16);
 font-weight: 400;
 line-height: 1.5;
 cursor: pointer;
+border: none;
 text-align: center;
+padding: 16px 32px;
+border-radius: 4px;
 }
 .button-order-service:hover {
 background-color: var(--color-blue-light);
@@ -251,11 +253,10 @@ width: 264px;
 display: flex;
 gap: 24px;
 justify-content: center;
-margin-top: 96px;
 }
 .portfolio-navi {
-align-items: center
 padding-top: 96px;
+padding-bottom: 120px;
 }
 .portfolio-apps {
 display: flex;
@@ -263,7 +264,6 @@ align-items: center;
 text-align: left;
 flex-wrap: wrap;
 margin-top: 72px;
-padding-bottom: 120px;
 gap: 24px;
 }
 .portfolio-name {
