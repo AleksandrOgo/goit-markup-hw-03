@@ -38,6 +38,8 @@ ul {
 .header-container {
     display: flex;
     align-items: center;
+    border-bottom: 1px solid #E7E9FC;
+    width: 100%;
 }
 
 .header-menu {
@@ -134,7 +136,6 @@ font-weight: 400;
 line-height: 1.5;
 cursor: pointer;
 text-align: center;
-padding 48px 0;
 }
 .button-order-service:hover {
 background-color: var(--color-blue-light);
@@ -151,14 +152,16 @@ cursor: pointer;
 margin: 0 auto;
 background: #F4F4FD;
 border: 1px solid #E7E9FC;
-    border-radius: 4px;
+border-radius: 4px;
+padding: 12px 24px;
 }
-.button-portfolio-navi:hover {
+.button-portfolio-navi:hover{
 background-color: var(--color-blue-light);
 color: var(--color-light);
 }
 .button-portfolio-navi:focus {
 background-color: var(--color-blue);
+color: var(--color-white);
 }
 .main-title {
 font-weight: 700;
@@ -238,6 +241,7 @@ padding-bottom: 120px;
 display: flex;
 font-weight: 400;
 font-size: var(--font-size-16);
+letter-spacing: 0.02em;
 line-height: 1.5;
 color: var(--color-white-dark);
 margin-top: 16px;
@@ -252,14 +256,13 @@ margin-top: 96px;
 .portfolio-navi {
 align-items: center
 padding-top: 96px;
-padding-bottom: 120px;
 }
 .portfolio-apps {
 display: flex;
 align-items: center;
 text-align: left;
 flex-wrap: wrap;
-margin-top: 48px;
+margin-top: 72px;
 padding-bottom: 120px;
 gap: 24px;
 }
