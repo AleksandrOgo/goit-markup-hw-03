@@ -33,12 +33,13 @@ ul {
 .header {
     padding: 24px 0px;
     box-sizing: border-box;
+    border-bottom: 1px solid #E7E9FC;
 }
 
 .header-container {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #E7E9FC;
+
 }
 
 .header-menu {
@@ -281,7 +282,6 @@ gap: 24px;
     color: var(--color-dark);
     letter-spacing: 0.02em;
     text-align: left;
-    margin-left: 16px;
 }
 .card-bottom {
 padding: 32px 0;
